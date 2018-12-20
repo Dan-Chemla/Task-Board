@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <title>Task Board</title>
+</head>
+<body onload="restoreData()">
+   
+    <div class="container-fluid">
+        <br>
+        <h1>My Task Board</h1>
+        <br>
+
+        <div id="enterATask" class="col-12 col-md-8">
+            <form action="" id="setYourNote">
+                <table>
+                    <tr>
+                        <td><label for="">Task Description:</label></td>
+                        <td><textarea id="taskDescBox" class="col-12"></textarea></td>
+                        <td><span id="taskDescError"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Task Due Date:</label></td>
+                        <td><input id="dueDateBox" type="date"></td>
+                        <td><span id="dueDateError"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Task Due Time:</label></td>
+                        <td><input id="dueTimeBox" type="time"></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="validation()" type="button" class="btn btn-outline-success btn-xs">Save</button>
+                            <button type="reset" class="btn btn-outline-danger btn-xs">Clean</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="ROW" class="row">
+
+
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
+
+
+
